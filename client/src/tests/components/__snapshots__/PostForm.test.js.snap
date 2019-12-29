@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PostForm correctly 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="title"
+      >
+        Title
+      </label>
+      <input
+        className="form-control"
+        maxLength={60}
+        name="title"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="category"
+      >
+        Category
+      </label>
+      <input
+        className="form-control"
+        maxLength={16}
+        name="category"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="mainimage"
+      >
+        Main Image (Optional)
+      </label>
+      <input
+        className="form-control"
+        name="mainimage"
+        onChange={[Function]}
+        placeholder="Enter URL for the main post view image"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="thumbnail"
+      >
+        Image Thumbnail (Optional)
+      </label>
+      <input
+        className="form-control"
+        name="thumbnail"
+        onChange={[Function]}
+        placeholder="Enter URL for the dashboard card image"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="body"
+      >
+        Body
+      </label>
+      <textarea
+        className="form-control"
+        maxLength={12000}
+        name="body"
+        onChange={[Function]}
+        rows="10"
+        value=""
+      />
+    </div>
+    <button
+      className="btn btn-primary btn-block"
+    >
+      Save Post
+    </button>
+  </form>
+</div>
+`;
+
+exports[`should render PostForm with post data 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="title"
+      >
+        Title
+      </label>
+      <input
+        className="form-control"
+        maxLength={60}
+        name="title"
+        onChange={[Function]}
+        type="text"
+        value="The first post"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="category"
+      >
+        Category
+      </label>
+      <input
+        className="form-control"
+        maxLength={16}
+        name="category"
+        onChange={[Function]}
+        type="text"
+        value="General"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="mainimage"
+      >
+        Main Image (Optional)
+      </label>
+      <input
+        className="form-control"
+        name="mainimage"
+        onChange={[Function]}
+        placeholder="Enter URL for the main post view image"
+        type="text"
+        value="http://mysite.com/img.jpg"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="thumbnail"
+      >
+        Image Thumbnail (Optional)
+      </label>
+      <input
+        className="form-control"
+        name="thumbnail"
+        onChange={[Function]}
+        placeholder="Enter URL for the dashboard card image"
+        type="text"
+        value="http://mysite.com/thumb.jpg"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="body"
+      >
+        Body
+      </label>
+      <textarea
+        className="form-control"
+        maxLength={12000}
+        name="body"
+        onChange={[Function]}
+        rows="10"
+        value="This is the first post. The body has at least 24 characters."
+      />
+    </div>
+    <button
+      className="btn btn-primary btn-block"
+    >
+      Save Post
+    </button>
+  </form>
+</div>
+`;

@@ -1,0 +1,41 @@
+{
+  "name": "node-blog-api",
+  "version": "1.0.0",
+  "description": "A simple node blog api",
+  "main": "index.js",
+  "scripts": {
+    "start:dockerdev": "cross-env NODE_ENV=dockerdev nodemon server/server.js",
+    "start:dev": "cross-env NODE_ENV=development node server/server.js",
+    "server": "nodemon server/server.js",
+    "test": "cross-env NODE_ENV=test mocha server/**/*test.js --timeout=4000",
+    "test-watch": "cross-env NODE_ENV=test nodemon --exec mocha server/**/*test.js --timeout=4000",
+    "test-server": "cross-env NODE_ENV=test npm start",
+    "client":"npm run start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "engines": {
+    "node": "10.1.0"
+  },
+  "author": "Sam Okasha",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^5.0.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.3",
+    "mongoose-unique-validator": "^2.0.1",
+    "validator": "^10.4.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "expect": "^23.4.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^3.1.0"
+  }
+}

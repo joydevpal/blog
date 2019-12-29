@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditPostPage correctly 1`] = `
+<div
+  className="container"
+>
+  <h3
+    className="text-center mt-4"
+  >
+    Edit Post
+  </h3>
+  <button
+    className="btn-delete btn btn-dark btn-sm float-right"
+    onClick={[Function]}
+  >
+    <i
+      className="far fa-trash-alt mr-2"
+    />
+    Delete Post
+  </button>
+  <PostForm
+    onSubmit={[Function]}
+    post={
+      Object {
+        "_id": "5b62cb86efcae617d8a0bef8",
+        "author": "UserTwo",
+        "body": "This is the second post.The body has at least 24 characters.",
+        "category": "General",
+        "comments": Array [],
+        "createdAt": 1533201286299,
+        "mainImage": "",
+        "thumbnail": "",
+        "title": "The second post",
+      }
+    }
+  />
+</div>
+`;
